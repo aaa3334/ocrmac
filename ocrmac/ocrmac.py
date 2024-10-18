@@ -184,7 +184,7 @@ def text_from_image(
                     watermark = is_diagonal(text,bbox)
                     
                     res.append((text, confidence, bbox, watermark))
-        print(res)
+        # print(res)
         return res
 
 class OCR:

@@ -1,3 +1,9 @@
+# Notes on this version:
+This is basically the same as the main version, except I am detecting the four corners of where the text bounding area is and detecting the angles - is it diagonal or not?
+
+Note: It can also bound and annotate text which is diagonal and will outline those in blue instead of red.
+
+
 [![Downloads](https://static.pepy.tech/badge/ocrmac)](https://pepy.tech/project/ocrmac)
 # ocrmac
 A small Python wrapper to extract text from images on a Mac system. Uses the vision framework from Apple. Simply pass a path to an image or a `PIL` image directly and get lists of texts, their confidence, and bounding box.

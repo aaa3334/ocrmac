@@ -85,7 +85,7 @@ def is_diagonal(text,bbox, tolerance=20):
         calculate_angle(bbox[2], bbox[3]),
         calculate_angle(bbox[3], bbox[0])
     ]
-    print("text",text,"bbox", bbox, "angles", angles)
+    # print("text",text,"bbox", bbox, "angles", angles)
     
     # Check if angles match the specific values within the tolerance
     specific_angles = [0.0, -90.0, 180.0, 90.0]
@@ -97,7 +97,7 @@ def is_diagonal(text,bbox, tolerance=20):
             lower_bound = specific_angle - abs(specific_angle * tolerance / 100)
             upper_bound = specific_angle + abs(specific_angle * tolerance / 100)
         
-        print("specific_angle", specific_angle, "lower_bound", lower_bound, "upper_bound", upper_bound)
+        # print("specific_angle", specific_angle, "lower_bound", lower_bound, "upper_bound", upper_bound)
             
         if not (lower_bound <= angle <= upper_bound):
                 break
